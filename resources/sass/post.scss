@@ -1,0 +1,38 @@
+.post-page-title {
+    color: #212121;
+
+    h1 {
+        font-size: 70px;
+    }
+}
+
+.post-page-description {
+    line-height: 1.5;
+    font-size: 1.25rem;
+    color: #495057;
+}
+
+.post-page-tags {
+    span {
+        padding: 5px;
+        background-color: #6366f1;
+        margin-right: 5px;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.post-page-content {
+
+    pre {
+        padding: 0.5rem;
+        background-color: white;
+        border-radius: 10px;
+
+    }
+}
+
+.post-page-author {
+    text-align: end;
+}
