@@ -1,0 +1,51 @@
+.menu-container {
+
+    .menu-main-site {
+        font-size: 1.25rem;
+        padding-bottom: 20px;
+        font-weight: 700;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu-labels-list {
+
+        .menu-labels-list-label {
+            font-weight: 700;
+            font-size: 0.875rem;
+            padding: 0.5rem 0;
+        }
+    }
+
+    .menu-posts-list {
+
+        .menu-posts-list-post {
+            font-weight: 400;
+            font-size: 0.875rem;
+            padding: 0.3rem 0.75rem;
+            cursor: pointer;
+            color: #495057;
+            border-radius: 10px;
+            
+
+            &:hover {
+                background-color: #e8e8e8;
+            }
+
+        }
+
+        .menu-posts-list-post-active {
+            font-weight: 700;
+            color: #6366F1;
+        }
+    }
+
+}

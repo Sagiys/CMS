@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,4 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::inertia('/', 'TestPage');
+Route::controller(FrontendController::class)->group(function () {
+    Route::get('/', 'mainPage')->name('main-page');
+    Route::get('/random', 'randomPage');
+    Route::get('/tag/{tag:slug}', 'tagPage')->missing(function (\Illuminate\Http\Request $request) {
+        return redirect()->route('main-page');
+    });
+    Route::get('/szukaj', 'searchPage');
+    Route::get('/post/{post:slug}', 'postPage')->missing(function (\Illuminate\Http\Request $request) {
+        return redirect()->route('main-page');
+    });
+});

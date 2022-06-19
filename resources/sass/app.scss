@@ -1,5 +1,24 @@
 // Variables
 @import 'variables';
 
+@import "~primereact/resources/themes/lara-light-indigo/theme.css";
+//theme
+@import "~primereact/resources/primereact.min.css";
+//core css
+@import "~primeicons/primeicons.css";
+//icons
+
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+@import "layout";
+
+@import "menu";
+
+@import "post";
+
+@import "postTeaser";
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
